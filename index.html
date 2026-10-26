@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aswathy R Nair - Tech Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --accent-cyan: #38bdf8;
+            --accent-purple: #c084fc;
+            --accent-pink: #f472b6;
+            --border-color: #334155;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+
+        /* Header / Hero Section */
+        header { 
+            background: linear-gradient(135deg, #1e1b4b, #312e81, #0f172a); 
+            padding: 80px 20px; 
+            text-align: center; 
+            border-bottom: 2px solid var(--border-color);
+        }
+        .badge {
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent-cyan);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        header h1 { font-size: 2.8rem; margin-bottom: 10px; font-weight: 700; background: linear-gradient(to right, var(--accent-cyan), var(--accent-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        header p { font-size: 1.2rem; color: #94a3b8; font-family: 'Fira Code', monospace; }
+
+        /* Container */
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+
+        /* Sections */
+        section { 
+            background: var(--card-bg); 
+            padding: 30px; 
+            margin-bottom: 30px; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+        section:hover { transform: translateY(-3px); }
+
+        h2 { color: var(--accent-cyan); margin-bottom: 20px; font-size: 1.8rem; display: flex; align-items: center; gap: 10px; }
+
+        /* About Text */
+        .about-text { font-size: 1.1rem; color: #cbd5e1; }
+        .college-highlight { color: var(--accent-pink); font-weight: 600; }
+
+        /* Skills Interactive Grid */
+        .skills-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .skill-box { 
+            background: #0f172a; 
+            padding: 20px; 
+            border-radius: 12px; 
+            border-left: 5px solid var(--accent-purple);
+            border-top: 1px solid var(--border-color);
+        }
+        .skill-box h3 { font-size: 1.2rem; margin-bottom: 12px; color: var(--accent-purple); }
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag { 
+            background: rgba(192, 132, 252, 0.1); 
+            color: #e9d5ff; 
+            padding: 5px 12px; 
+            border-radius: 6px; 
+            font-size: 0.85rem; 
+            font-family: 'Fira Code', monospace;
+            border: 1px solid rgba(192, 132, 252, 0.2);
+        }
+
+        /* Projects */
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .project-card { 
+            background: #0f172a; 
+            padding: 20px; 
+            border-radius: 12px; 
+            border: 1px solid var(--border-color);
+            transition: 0.3s;
+        }
+        .project-card:hover { border-color: var(--accent-cyan); }
+        .project-card h3 { color: var(--accent-cyan); margin-bottom: 10px; font-size: 1.2rem; }
+        .project-card p { color: #94a3b8; font-size: 0.95rem; margin-bottom: 15px; }
+
+        /* Contact Section */
+        .contact-box { display: flex; flex-direction: column; gap: 15px; }
+        .contact-item { 
+            background: #0f172a; 
+            padding: 15px 20px; 
+            border-radius: 10px; 
+            display: flex; 
+            align-items: center; 
+            gap: 15px;
+            border: 1px solid var(--border-color);
+        }
+        .contact-item a { color: var(--accent-cyan); text-decoration: none; font-weight: 600; word-break: break-all; }
+        .contact-item a:hover { text-decoration: underline; }
+
+        /* Footer */
+        footer { text-align: center; padding: 30px; color: #64748b; font-size: 0.9rem; border-top: 1px solid var(--border-color); margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="badge">BCA (Honours) • 2024 - 2026 Batch</span>
+        <h1>Aswathy R Nair</h1>
+      
+          Aspiring Developer & Tech Enthusiast 
+    </header>
+
+    <div class="container">
+        <!-- About Me -->
+        <section>
+            <h2>🚀 About Me</h2>
+            <p class="about-text">
+                I am a passionate final-year Bachelor in Computer Applications (Honours) student at <span class="college-highlight">St. George's College, Aruvithura</span> (Erattupetta, Kottayam). Driven by curiosity and a tech-first mindset, I love exploring modern software development, web & app tech, and data science.
+            </p>
+        </section>
+
+        <!-- Skills & Tech Stack -->
+        <section>
+            <h2>⚡ Tech Stack & Curriculum Skills</h2>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <h3>Programming Core</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">C</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h3>Web & Mobile Dev</h3>
+                    <div class="tags">
+                        <span class="tag">HTML5 / CSS3</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Flutter</span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h3>Data Science & Tools</h3>
+                    <div class="tags">
+                        <span class="tag">Data Science (Python)</span>
+                        <span class="tag">Git & GitHub</span>
+                        <span class="tag">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>💻 Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Interactive Portfolio</h3>
+                    <p>A sleek, modern, tech-themed responsive portfolio website built with HTML5 & CSS3, hosted via GitHub Pages.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Data Science Mini-Project</h3>
+                    <p>Exploratory data analysis and preprocessing workflows implemented using Python core libraries.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Cross-Platform App (React/Flutter)</h3>
+                    <p>UI experiments and application logic built for modern mobile and web environments.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section>
+            <h2>📬 Let's Connect</h2>
+            <div class="contact-box">
+                <div class="contact-item">
+                    <span>📧 Email:</span>
+                    <a href="mailto:aswathyhari176@gmail.com">aswathyhari176@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>🐙 GitHub:</span>
+                    <a href="https://github.com/aswathyhari176-gif" target="_blank">github.com/aswathyhari176-gif</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Aswathy R Nair. Designed with Code & Passion.</p>
+    </footer>
+
+</body>
+</html>
